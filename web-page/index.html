@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Welcome to Jenkins Lab session</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
+    <title>Welcome to Jenkins Lab Task!</title>
+    <style>
+        html {
+            color-scheme: light dark;
+        }
+        body {
+            width: 35em;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+    </style>
+    <script>
+        function increment() {
+            let currentValue = parseInt(document.getElementById("number").innerHTML);
+            let newValue = currentValue+1;
+            document.getElementById("number").innerHTML=newValue;
+        }
+        function decrement() {
+            let currentValue = parseInt(document.getElementById("number").innerHTML);
+            let newValue = currentValue-1;
+            document.getElementById("number").innerHTML=newValue;
+        }
+    </script>
 </head>
+
 <body>
-<h1>Welcome to Jenkins Lab Session</h1>
- <p> This is the first paragraph of our web page
-   It will trigger a build in our jenkins setup
- added more content in paragraph
- adding next line</p>
+    <h1>Welcome to Jenkins Lab Lab Task</h1>
+    <h2>Current Number:</h2>
+    <h1 id="number">
+        0
+    </h1>
+    <form action="#">
+        <button onclick="increment()"> Increment!</button>
+        <button onclick="decrement()"> Decrement!</button>
+    </form>
+    <h1> By Vibha </h1>
+    <h2> Profession: Developer </h2>
+    <h3> Lives in Mumbai </h3>
 
-<h1> Narendra Singh </h1>
-<h2> Profession: Software Engineer </h2>
-<h3> Lives in Pune </h3>
-
-<h1> Company: Qualys Inc </h1>
-
-<p><em>Thank you for your time</em></p>
+    <p><em>Thank you for testing!</em></p>
 </body>
+
 </html>
